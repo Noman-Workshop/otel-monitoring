@@ -23,8 +23,6 @@ scrape_configs:
       - regex:
           expression: 'time="(?P<time>.*?)" level=(?P<level>[^\s]+) msg="(GoError: )?\[(?P<traceID>[A-Fa-f0-9]+)-(?P<spanID>[A-Fa-f0-9]+)\](?: method=(?P<method>[^\s]+))? .*"(.*)? source=(?P<source>[^\s]+)'
       - labels:
-          traceID:
-          spanID:
           level:
           method:
           source:
